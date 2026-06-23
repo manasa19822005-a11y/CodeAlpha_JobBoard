@@ -1,0 +1,17 @@
+<h1>Job Board Platform</h1>
+
+<a href="/post">Post New Job</a>
+
+<hr>
+
+{% for job in jobs %}
+
+<h3>{{ job[2] }}</h3>
+
+<p>Company: {{ job[1] }}</p>
+
+<p>Location: {{ job[3] }}</p>
+
+<hr>
+
+{% endfor %}
